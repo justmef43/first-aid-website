@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Aid 101</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffe6f0;
+            color: #333333;
+        }
+
+        header {
+            background-color: #ffb6c1;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        nav {
+            background-color: #ffd1dc;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: #b03060;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .search-box {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 300px;
+            border: 2px solid #ff8fab;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        hr {
+            border: 1px solid #ffb6c1;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 30px;
+        }
+
+        .card {
+            background-color: white;
+            width: 270px;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        .card h2 {
+            color: #b03060;
+        }
+
+        .section {
+            background-color: white;
+            margin: 30px auto;
+            padding: 25px;
+            width: 80%;
+            border-radius: 18px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .section h2 {
+            color: #b03060;
+            text-align: center;
+        }
+
+        details {
+            background-color: #fff0f5;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 12px;
+            border: 2px solid #ffb6c1;
+        }
+
+        summary {
+            font-size: 22px;
+            font-weight: bold;
+            color: #b03060;
+            cursor: pointer;
+        }
+
+        .emergency {
+            font-size: 30px;
+            color: #b03060;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .quiz-question {
+            background-color: #fff0f5;
+            padding: 15px;
+            border-radius: 12px;
+            margin: 12px 0;
+        }
+
+        textarea {
+            width: 95%;
+            height: 50px;
+            border: 2px solid #ffb6c1;
+            border-radius: 8px;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #ff8fab;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #b03060;
+        }
+
+        #answers {
+            display: none;
+            background-color: #fff0f5;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>First Aid 101</h1>
+    <p>Be Prepared. Be Calm. Save Lives.</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#steps">Step By Step</a>
+    <a href="#tips">Tips</a>
+    <a href="#quiz">Quiz</a>
+</nav>
+
+<div class="search-box">
+    <input type="text" placeholder="Search first aid topic...">
+</div>
+
+<hr>
+
+<div class="cards" id="home">
+    <div class="card">        <h2>Cuts</h2>
+        <p><b>Meaning:</b> A cut is when the skin is opened or injured by something sharp.</p>
+    </div>
+
+    <div class="card">        <h2>Burns</h2>
+        <p><b>Meaning:</b> A burn is damage to the skin caused by heat, fire, hot water, or chemicals.</p>
+    </div>
+
+    <div class="card">        <h2>Choking</h2>
+        <p><b>Meaning:</b> Choking happens when food or an object blocks the airway and makes breathing hard.</p>
+    </div>
+</div>
+
+<div class="section" id="steps">
+    <h2>Step By Step Actions</h2>
+
+    <details>
+        <summary>1. Cuts</summary>
+        <p><b>What is it?</b> A cut is an opening in the skin caused by something sharp like glass, paper, or a knife.</p>
+        <p><b>How to solve the problem:</b><br>
+        1. Wash your hands first.<br>
+        2. Rinse the cut gently with clean water.<br>
+        3. Press the cut with clean gauze or tissue to stop bleeding.<br>
+        4. Cover it with a plaster or bandage.<br>
+        5. Ask an adult or doctor for help if the cut is deep.</p>
+        <p><b>What we use:</b> Clean water, gloves, tissue or gauze, antiseptic wipe, plaster, and bandage.</p>
+    </details>
+
+    <details>
+        <summary>2. Burns</summary>
+        <p><b>What is it?</b> A burn is an injury to the skin caused by something hot, like boiling water, fire, or steam.</p>
+        <p><b>How to solve the problem:</b><br>
+        1. Move away from the hot object safely.<br>
+        2. Cool the burn under cool running water for 10 to 20 minutes.<br>
+        3. Do not put ice, butter, or toothpaste on it.<br>
+        4. Cover the burn with clean cloth or dressing.<br>
+        5. Get medical help if the burn is serious.</p>
+        <p><b>What we use:</b> Cool running water, clean dressing, clean cloth, and gloves.</p>
+    </details>
+
+    <details>
+        <summary>3. Choking</summary>
+        <p><b>What is it?</b> Choking is when something blocks the throat and stops air from moving normally.</p>
+        <p><b>How to solve the problem:</b><br>
+        1. Ask the person if they are choking.<br>
+        2. Tell someone to call emergency services.<br>
+        3. If they cannot breathe, give firm back blows between the shoulder blades.<br>
+        4. If needed, use abdominal thrusts only if you are trained or an adult helps.<br>
+        5. Keep checking if the object comes out.</p>
+        <p><b>What we use:</b> Help from an adult, emergency phone number, and first aid knowledge.</p>
+    </details>
+</div>
+
+<div class="section">
+    <h2>Emergency Numbers</h2>
+    <p class="emergency">911</p>
+    <p class="emergency">112</p>
+</div>
+
+<div class="section" id="tips">
+    <h2>Tips & Safety</h2>
+    <p>Always stay calm in an emergency.<br>Do not move an injured person unless they are in danger.</p>
+    <p>Ask an adult, teacher, or nurse for help as soon as possible.</p>
+</div>
+
+<div class="section" id="quiz">
+    <h2>First Aid Quiz</h2>
+    <p>Answer the questions, then click the button to see the correct answers.</p>
+
+    <div class="quiz-question">
+        <p><b>1. What should you do first before helping someone with a cut?</b></p>
+        <textarea placeholder="Write your answer here..."></textarea>
+    </div>
+
+    <div class="quiz-question">
+        <p><b>2. What should you use to cool a burn?</b></p>
+        <textarea placeholder="Write your answer here..."></textarea>
+    </div>
+
+    <div class="quiz-question">
+        <p><b>3. Should you put ice on a burn?</b></p>
+        <textarea placeholder="Write your answer here..."></textarea>
+    </div>
+
+    <div class="quiz-question">
+        <p><b>4. What should you do if someone is choking and cannot breathe?</b></p>
+        <textarea placeholder="Write your answer here..."></textarea>
+    </div>
+
+    <div class="quiz-question">
+        <p><b>5. Why is it important to stay calm in an emergency?</b></p>
+        <textarea placeholder="Write your answer here..."></textarea>
+    </div>
+
+    <button onclick="showAnswers()">Finish Quiz / Show Answers</button>
+
+    <div id="answers">
+        <h3>Correct Answers</h3>
+        <p><b>1.</b> Wash your hands first or wear gloves.</p>
+        <p><b>2.</b> Use cool running water.</p>
+        <p><b>3.</b> No, you should not put ice on a burn.</p>
+        <p><b>4.</b> Call for help and give back blows if they cannot breathe.</p>
+        <p><b>5.</b> Staying calm helps you think clearly and help the injured person faster.</p>
+    </div>
+</div>
+
+<footer>
+    <p>First Aid 101 Website Project</p>
+</footer>
+
+<script>
+    function showAnswers() {
+        document.getElementById("answers").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
